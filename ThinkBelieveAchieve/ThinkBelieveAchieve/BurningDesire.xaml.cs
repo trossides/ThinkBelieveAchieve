@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace ThinkBelieveAchieve
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class BurningDesire : ContentPage
     {
-        public MainPage()
+        public BurningDesire()
         {
             InitializeComponent();
-
-
         }
     }
 }

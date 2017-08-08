@@ -13,7 +13,7 @@ namespace ThinkBelieveAchieve
         {
             InitializeComponent();
 
-            MainPage = new ThinkBelieveAchieve.MainPage();
+            MainPage = new ThinkBelieveAchieve.BurningDesire();
         }
 
         protected override void OnStart()
