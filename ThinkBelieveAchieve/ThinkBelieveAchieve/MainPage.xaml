@@ -1,11 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ThinkBelieveAchieve"
-             x:Class="ThinkBelieveAchieve.MainPage">
+             x:Class="ThinkBelieveAchieve.MainPage"
+             Title="Home"
+             MasterBehavior="Popover">
+             
 
 	<Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 
-</ContentPage>
+    <MasterDetailPage.Master>
+        
+        <ContentPage Padding="10" BackgroundColor="Gray" Title="Menu">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Menu">
+                    </Label>
+
+                    <Button Text="Burning Desire" BackgroundColor="Gold" Clicked="Burning_Desire"></Button>
+                    <Button Text="Vision Board" BackgroundColor="Aqua" Clicked="Vision_Board"></Button>
+                    
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+    <MasterDetailPage.Detail>
+
+        <ContentPage Padding="10">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Detail Page">
+                    </Label>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
