@@ -21,6 +21,9 @@
 
                     <Button Text="Burning Desire" BackgroundColor="Gold" Clicked="Burning_Desire"></Button>
                     <Button Text="Vision Board" BackgroundColor="Aqua" Clicked="Vision_Board"></Button>
+                    <Button Text="Affirmation" BackgroundColor="Orange" Clicked="Affirmation"></Button>
+                    <Button Text="Motivation" BackgroundColor="Green" Clicked="Motivation"></Button>
+                    <Button Text="Master Mind" BackgroundColor="Red" Clicked="Master_Mind"></Button>
                     
                 </StackLayout>
             </ContentPage.Content>
