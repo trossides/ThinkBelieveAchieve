@@ -4,7 +4,7 @@
              x:Class="ThinkBelieveAchieve.Affirmation"
              Title="Affirmation">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <Label Text="Affirmation" />
         </StackLayout>
     </ContentPage.Content>

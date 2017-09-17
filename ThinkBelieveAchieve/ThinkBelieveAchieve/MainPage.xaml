@@ -1,18 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ThinkBelieveAchieve"
+             x:Class="ThinkBelieveAchieve.MainPage"
+             Title="Home">
+
+    <local:BurningDesire></local:BurningDesire>
+    <local:VisionBoard></local:VisionBoard>
+    <local:Affirmation></local:Affirmation>
+    <local:Motivation></local:Motivation>
+    <local:MasterMind></local:MasterMind>
+    
+	
+</TabbedPage>
+
+<!--<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ThinkBelieveAchieve"
              x:Class="ThinkBelieveAchieve.MainPage"
              Title="Home"
              MasterBehavior="Popover">
-             
 
-	<Label Text="Welcome to Xamarin Forms!" 
+
+    <Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 
     <MasterDetailPage.Master>
-        
+
         <ContentPage Padding="10" BackgroundColor="Gray" Title="Menu">
             <ContentPage.Content>
                 <StackLayout Margin="5,30,5,5">
@@ -24,7 +39,7 @@
                     <Button Text="Affirmation" BackgroundColor="Orange" Clicked="Affirmation"></Button>
                     <Button Text="Motivation" BackgroundColor="Green" Clicked="Motivation"></Button>
                     <Button Text="Master Mind" BackgroundColor="Red" Clicked="Master_Mind"></Button>
-                    
+
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>
@@ -42,4 +57,4 @@
             </ContentPage.Content>
         </ContentPage>
     </MasterDetailPage.Detail>
-</MasterDetailPage>
+</MasterDetailPage>-->
