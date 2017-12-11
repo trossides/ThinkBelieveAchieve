@@ -16,5 +16,10 @@ namespace ThinkBelieveAchieve
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Saved", "Your BurningDesire has been saved", "Great!");
+        }
     }
 }
